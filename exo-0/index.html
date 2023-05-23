@@ -11,45 +11,45 @@
 
         /* Section 1 */   
 
-        var name = "Joe";
-        var city = 'London';
-        var age = 32;
-        var isRed = true;
-        var isOld = age > 80;
+        var name = "Joe"; // je déclare une variable nommée name qui prend pour valeur un string (chaine de caractères) Joe.
+        var city = 'London'; // je déclare une variable nommée city qui prend pour valeur un string (chaine de caractères) London.
+        var age = 32; // je déclare une variable nommée age qui prend pour valeur un nombre 32.
+        var isRed = true; // je déclare une variable nommée isRed qui prend pour valeur un boolean true.
+        var isOld = age > 80; // je déclare une variable nommée isOld qui prend pour valeur un boolean en fonction de la valeur d'une autre variable age.
 
-        var previousJobs = ['lawyer', 'developper', 'Professionnal climber'];
+        var previousJobs = ['lawyer', 'developper', 'Professionnal climber']; // je déclare une variable nommée previousJobs qui prend pour valeur un Array composé de 3 Strings.
 
-        function info(height, weight) {
-            if (height > 180) {
-                console.log('Vous êtes grand');
-            }
-            if (weight < 0) {
-                console.log('oups, there is a problem');
-            } else if ( weight < 15) {
-                console.log('Are you that slim ?')
-            } else {
-                console.log('Good !')
-            }
-        }
+        function info(height, weight) { // je déclare une fonction nommé info qui prend en paramètre deux variables qui seront nommmées height (taille) et weight (poid) à l'intérieur de celle-ci.
+            if (height > 180) { // je créé une condition qui teste la variable height, si celle-ci est supérieur à la valeur du nombre 180 alors elle applique le code qui suit.
+                console.log('Vous êtes grand'); //j'affiche dans la console la String Vous êtes grand.
+            } // je ferme la condition précédente.
+            if (weight < 0) { // je passe mon paramétre weight dans une condition qui teste si sa valeur est inférieur au nombre 0.
+                console.log('oups, there is a problem'); // si la condition précédente est vérifier (true) alors j'affiche dans la console 'oups, there is a problem'.
+            } else if ( weight < 15) { // si la précédent econdition est false, je teste si la variable weight est inférieur au nombre 15.
+                console.log('Are you that slim ?') // si la précédente condition est true alors j'affiche dans la console 'Are you that slim?'.
+            } else { // et si aucune des conditions précédente n'est vérifier alors j'applique le code suivant.
+                console.log('Good !') // j'affiche dans la console 'Good !'.
+            } // je ferme la série de conditions.
+        } // je ferme la fonction.
 
-        info(165, 45);
+        info(165, 45); // j'appelle la fonction info en lui passant en paramètre les valeurs numériques 165 et 45.
 
-        var myHeight = 175;
-        var myWeight = 86;
+        var myHeight = 175; // je déclare une variable nommé myheight qui prend pour valeur un nombre 175.
+        var myWeight = 86; // je déclare une variable nommé myWeight qui prend pour valeur un nombre 86.
 
-        info(myHeight, myWeight);
+        info(myHeight, myWeight); // j'appelle la fonction info en lui passant en paramètre les variables myHeight et myWeight.
 
-        info(myHeight + 15, myWeight - 100);
+        info(myHeight + 15, myWeight - 100); // j'appelle la fonction info en lui passant en paramètre les variables myHeight et myWeight que je modifie en ajoutant à la premiére la valeur 15 et en soustrayant à la deuxième la valeur 100.
 
-        function toUpper(variable) {
-            return variable.toUpperCase();
-        }
+        function toUpper(variable) { // je déclare une fonction nommé toUpper qui prend en paramètre une variable qui sera nommé variable.
+            return variable.toUpperCase(); // je retourne la variable modifier par la methode toUpperCase (qui vas transformer les Strings en majuscules).
+        } // je termine la fonction.
 
-        var upperName = toUpper(name);
+        var upperName = toUpper(name); // je déclare une variable nommé upperName qui prend pour valeur le résultat de la fonction toUpper à laquelle je passe la variable name en paramètre.
 
-        for (i = 0; i < 3; i = i + 1) {
-            console.log(previousJobs[i]);
-        }
+        for (i = 0; i < 3; i = i + 1) { // je créé une boucle for qui commence avec une variable nommé i qui prend pour valeur 0, qui répète sont code tant que i est inférieur à la valeur 3 et qui incrémente de 1 à chaque itérations.
+            console.log(previousJobs[i]); // j'affiche dans la console la valeur de la variable Array (tableau) à l'index i.
+        } // je ferme la boucle.
 
         /* Section 2: */
 

@@ -17,7 +17,7 @@ function getPlayerChoice(){
 }
 
 function getComputerChoice(){
-    return answer[Math.floor(Math.random()*3)];
+    return answer[Math.floor(Math.random()*answer.length)];
 }
 
 function getChoicePower(playerChoice){
